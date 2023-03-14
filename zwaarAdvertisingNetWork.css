@@ -1,0 +1,713 @@
+/* Start Navbar Style */
+
+    /* Lg Sceens */
+
+nav { border-bottom: 1px solid white; 
+	  padding: 2px !important;
+      margin-left: 100px;
+      margin-right: 100px;}
+
+@media(max-width: 850px){
+nav { margin-left: 20px;
+      margin-right: 20px;}}
+
+ul li a {font-size: 14px !important;}
+
+ul li a:hover { color: black !important;}
+
+.logo { margin-top: -15px;
+		height: 55px;
+		width: 130px;}
+
+	/* sm And xs Sceens */
+
+@media (max-width: 414px){
+.logo { width: 100px;
+		height: 60px;}}
+
+/* End Navbar Style */
+
+/* Start Home Section Style */
+
+    /* Lg Sceens */
+
+#home { background: url('assets/zwaar.jpg') center center no-repeat;
+		background-size: cover;}
+
+.homeContent {margin-top: 25%;}
+
+.homeHeading { color: #F0FFFF;
+			   font-size: 40px;
+			   font-family: serif;}
+
+@media only screen and (max-width: 1024px){
+.homeContent {margin-top: 30%;}}
+
+@media only screen and (max-width: 768px){
+.homeContent {margin-top: 40%;}}
+
+.homeParagraph { color: #F0FFFF;
+			     font-size: 30px;
+			     font-family: serif;}
+
+	/* md, sm And xs Screens */
+
+@media (max-width: 576px){
+.homeContent {margin-top: 40%;}}
+
+@media only screen and (max-width: 768px){
+.homeHeading {font-size: 35px;}
+.homeParagraph {font-size: 30px;}}
+
+@media (max-width: 375px){ 
+.homeHeading { font-size: 30px;}
+.homeParagraph { font-size: 26px;}}
+
+@media (max-width: 320px){ 
+.homeHeading { font-size: 26px;}
+.homeParagraph { font-size: 24px;}}
+
+
+/* End Home Section Style */
+
+/* Start Advertisers And Publishers Section Style */
+
+			/* Advertisers And Publishers Section Animation  */
+
+@keyframes fadeInLeft {
+  from { opacity: 0;
+         transform: translate3d(-100%, 0, 0);}
+  to { opacity: 1;
+       transform: none;}}
+
+@keyframes fadeInRight {
+  from { opacity: 0;
+    	 transform: translate3d(100%, 0, 0);}
+  to { opacity: 1;
+       transform: none;}}
+
+@keyframes fadeInDown {
+  from { opacity: 0;
+    	 transform: translate3d(0, -100%, 0);}
+  to { opacity: 1;
+       transform: none;}}
+
+	/* XLg Screens */
+
+			/* Advertisers */
+
+.advertisers { height: 100%;
+			   width: 100%;
+			   padding: 0!important;
+			   margin: 0!important;
+			   position: absolute;
+			   top: 0;
+			   left: -51%;
+			   overflow: hidden;
+			   background: #47b6cd;
+			   transform: skewX(-20deg);}
+
+.advertisersContentContainer{ background: url('assets/advertisiers.jpg') center center no-repeat; 
+					          background-size: cover;
+					          height: 100%;
+						      width: 100%;
+						      padding: 0 !important;
+						      margin: 0 !important;
+						      position: relative; 
+						      top: 0;
+						      left:50%;
+						     transform: skewX(20deg);}
+
+.advertisersContent { height: 65%;
+				      width: 40%;
+				      background: transparent;
+				      margin-top: 180px;
+				      margin-left: 30px;
+				     display: inline-block;
+				     animation-name: fadeInLeft ;
+				     animation-duration:3s; }
+
+			/* Publishers */
+
+.publishers { height: 100%;
+              width: 100%;
+		      padding: 0!important;
+		      margin: 0!important;
+		      position: absolute;
+		      top: 0;
+		      right:  -49%;
+		      overflow: hidden;
+		      background: #4ecd81;
+              transform: skewX(-20deg);}
+
+.publishersContentContainer { background: url('assets/publishers.jpg') center center no-repeat; 
+					          background-size: cover;
+			                  height: 100%;
+						      width: 100%;
+						      position: relative;
+						      top: 0;
+						      right: 40%;
+						      padding: 0;
+						      margin: 0;
+						      transform: skewX(20deg);}
+
+.publishersContent { height: 65%;
+				     width: 40%;
+				     background: transparent;
+				     margin-top: 180px;
+				     margin-left: 45%;
+				     display: inline-block;
+				     animation-name:fadeInRight;
+				     animation-duration: 3s}
+
+			/* Advertisers And Publishers Content */
+
+.advertisersAndPublishersHeading { color: #F0FFFF;
+								   font-size: 25px;
+								   font-family: serif;
+								   border-bottom: 1px solid #F0FFFF;
+								   text-align: left;
+								   padding-bottom: 10px;}
+
+.advertisersAndPublishersParagraph { color: #F0FFFF; 
+									 font-size: 22px;
+									 font-family: serif;
+									 text-align: left;}
+
+			/* Advertisers And Publishers btnz */
+
+.learnMoreBtn { border: 1px solid #F0FFFF;
+				border-radius: 20px;
+				color: #F0FFFF;
+     			padding:8px;
+     			width: 100%;}
+
+.signUpBtn { border: 1px solid #F0FFFF;
+			 border-radius: 20px;
+			 color: #F0FFFF;
+			 padding:8px;
+			 width: 100%}
+
+.advertisersbtn:hover { border:1px solid  #00004d;
+	                    color: #00004d;
+						text-decoration: none; }
+
+.publishersbtn:hover { border:1px solid green;
+					   text-decoration: none;
+					   color: green; }
+
+		/* lg Screens */			   
+
+ 			/* Advertisers */ 
+
+.advertisersLgScreens { height: 100%;
+					    width: 100%;
+					   	position: absolute;
+					    background: #47b6cd;}
+
+.advertisersContentContainerLgScreens { background: url('assets/advertisiers.jpg')center center no-repeat; 
+								        background-size: cover;
+								        height: 100% !important;
+									    width: 100%;
+									    position: relative; }
+
+.advertisersContentLgScreens { height: 60%;
+						       width: 60%;
+						      margin-top: 20%;
+						      margin-left: 20%;
+						       text-align: center;
+						       background: transparent;
+						       display: inline-block;
+						       animation-name:fadeInLeft;
+						       animation-duration: 3s}
+@media (max-width: 1024px) {
+.advertisersContentLgScreens { height: 80%;
+						       width: 80%;
+						       margin-top: 20%;
+						       margin-left: 10%;}}
+@media (max-width: 768px){
+.advertisersContentLgScreens { height: 80%;
+						       width: 100%;
+						       margin-top: 20%;
+	                           margin-right: 0%;
+						       margin-left: 0%;}}
+
+
+  			 /* Publishers */
+
+.publishersLgScreens { height: 100%;
+		               width: 100% !important;
+				       padding: 0!important;
+				       margin: 0!important;
+				       position: absolute;
+				       background: #4ecd81;}
+
+.publishersContentContainerLgScreens { background: url('assets/publishers.jpg') no-repeat; 
+							           background-size: cover;
+					                   height: 100%;
+								       width: 100% !important;
+								       position: relative;
+								       padding: 0;
+								       margin: 0;}
+
+.publishersContentLgScreens { height: 60%;
+						      width: 60%;
+						      margin-top: 20%;
+						      margin-left: 20%;
+						      text-align: center;
+						      background: transparent;
+						      display: inline-block;
+						      animation-name:fadeInRight;
+						      animation-duration: 3s}
+@media (max-width: 1024px) {
+.publishersContentLgScreens { height: 80%;
+						       width: 80%;
+						       margin-top: 20%;
+						       margin-left: 10%;}}
+
+@media (max-width: 768px){
+.publishersContentLgScreens { height: 80%;
+						       width: 100%;
+						       margin-top: 20%;
+	                           margin-right: 0%;
+						       margin-left: 0%;}}
+
+			/* Advertisers And Publishers Content */
+
+@media (max-width: 1024px){
+.advertisersAndPublishersHeading { font-size: 35px;}
+.advertisersAndPublishersParagraph { font-size: 30px;}}
+
+@media (max-width: 992px){
+.advertisersAndPublishersHeading { font-size: 30px;}
+.advertisersAndPublishersParagraph { font-size: 25px;}}
+
+			/* Advertisers And Publishers btnz */
+
+@media (max-width: 1024px){
+.learnMoreBtn { border-radius: 30px;
+				font-size: 20px;
+     			padding:8px;}
+
+.signUpBtn { border-radius: 35px;
+			 font-size: 20px;
+			 padding:8px;}}
+
+@media (max-width: 992px){
+.learnMoreBtn { border-radius: 30px;
+				font-size: 20px;
+     			padding:8px;}
+
+.signUpBtn { border-radius: 35px;
+			 font-size: 20px;
+			 padding:8px;
+			 margin-top: 20px}}
+
+@media (max-width: 768px){
+.learnMoreBtn { margin-top: 20px;}
+.signUpBtn {  margin-top: 10px;}}
+
+
+	/* md , sm and xs Screens */
+
+			/* Advertisers */
+
+@media (max-width: 576px){
+.advertisersContentLgScreens { margin-top: 25%;}}
+
+@media (max-width: 414px){
+.advertisersContentLgScreens { margin-top: 30%;
+						       margin-left: 0%;}}
+
+@media (max-width: 375px) {
+.advertisersContentLgScreens { height: 80%;
+						       width: 100%;
+	                           margin-right: 0%;
+						       margin-left: 0%;}}
+
+			/* Publishers */
+
+@media (max-width: 576px){
+.publishersContentLgScreens { margin-top: 25%;}}
+
+@media (max-width: 414px){
+.publishersContentLgScreens { width: 100%
+							  height:90%;
+							  margin-top: 30%;
+						      margin-left: 0%;}}
+@media (max-width: 375px) {
+.publishersContentLgScreens { width: 100%;
+	                          margin-right: 0%;
+						      margin-left: 0%;	}}
+
+			/* Advertisers And Publishers Content */
+									
+@media (max-width:414px) { 
+.advertisersAndPublishersHeading { font-size: 26px;
+								   text-align: left;}
+.advertisersAndPublishersParagraph { font-size: 24px;}}
+
+@media (max-width: 375px) {
+.advertisersAndPublishersHeading { font-size: 24px;}
+
+.advertisersAndPublishersParagraph { font-size: 22px;}}
+
+@media (max-width: 320px) {
+.advertisersAndPublishersHeading { font-size: 22px;}
+
+.advertisersAndPublishersParagraph { font-size: 20px;}}
+
+			/* Advertisers And Publishers btnz */
+
+@media (max-width: 576px){
+.learnMoreBtn { margin-top: 20px;}
+.signUpBtn { margin-top: 10px;}}
+
+@media (max-width: 414px){
+.learnMoreBtn { padding: 9px;
+				font-size: 18px; 
+	            margin-top: 10px;}
+
+.signUpBtn { padding: 8px;
+			 font-size: 18px;
+		     margin-top: 15px;}}
+
+@media (max-width: 320px){
+.learnMoreBtn { padding: 6px;
+				font-size: 16px; 
+	            margin-top: 20px;}
+
+.signUpBtn { padding: 6px;
+			 font-size: 16px;
+		     margin-top: 10px;}}
+
+/* End Advertisers And Publishers Section Style */
+
+/* Start About Us Section Style */
+
+ 					/* About Us Section Animation  */
+
+ @keyframes zoomIn {
+  from { opacity: 0;
+    	transform: scale3d(.3, .3, .3);}
+  50% { opacity: 1;}}
+
+#aboutUs { background-color: white;
+		   background-size: cover;
+		   height: 100%;
+           text-align: center;
+           align-items: center;}
+
+       /* Xlg And Lg screens */
+
+       		/* Innovation Room */
+
+.zwaarInnovationRoom {margin-top: 10%;}
+#zwaarDailyActiveProcess {margin-top: 5%;}
+#workingHours { margin-left: -30% !important;}
+#coffeeCups { margin-left: -20% !important; }
+
+@media (max-width: 1024px){
+.zwaarInnovationRoom {margin-top: 10%;}}
+
+.zwaarInnovationRoom h3 { color:#00bfff;
+			              font-size:22px;
+			              font-family: serif;
+			              padding-bottom: 10px;
+			 			  border-bottom: 1px solid #00004d;}
+
+.zwaarInnovationRoom p { color:#00bfff;
+			             font-family: serif;
+			             text-align: left;
+		                 font-size:18px;}
+
+		    /* Daily Working Process*/
+
+#zwaarDailyActiveProcess {margin-top: 5%;}
+
+.workingProcessContainer { width: 250px;
+						   height: 200px;}
+
+.aboutSectionCounter { height: 130px ;
+					   width:130px ;
+					   display: inline-block;
+			           border-radius:100% ;
+					   background:  #2567C0;
+					   animation-name: zoomIn;
+					   animation-duration: 6s;
+					   position: relative;
+					   margin-top: 7px;
+					   margin-right: -10% !important;
+					   z-index: 1}
+
+.aboutSectionImage { height: 110px ;
+					 width: 110px ;
+					 display: inline-block;
+					 border-radius: 100% ;
+					 background:#5090D6;
+					 background: -webkit-radial-gradient(#619bda, #5090D6); 
+					 background: -o-radial-gradient(#619bda, #5090D6); 
+					 background: -moz-radial-gradient(#619bda, #5090D6); 
+					 background: radial-gradient(#619bda, #5090D6);
+					 animation-name: zoomIn;
+					 animation-duration: 6s;
+					 position: absolute;
+					 z-index: 1;}
+
+.aboutSectionInfoImages { height: 60px;
+						  width: 60px;
+						  margin-top: 20px; }
+
+.aboutSectionSlogan { height: 150px ;
+					  width: 150px ;
+	                  display: inline-block;
+	                  border-radius: 100% ;
+					  background:  #183F7F;
+					  animation-name: zoomIn ;
+					  animation-duration: 6s;
+					  margin-left: 50%;
+					  margin-top: -20% !important;}
+
+.aboutSectionSloganText { font-family: serif;
+						  font-size: 15px;
+				          color: #F0FFFF;
+						  margin-top: 35px;}
+
+.aboutSectionSloganBrainText {margin-top: 45px !important;}
+
+		/* md Screens */
+
+ /* (classes used are dynamically added from the js file on 992px 
+	as a breakpoint to start changing this section style )*/
+
+		  /* Innovation Room */
+
+.zwaarInnovationRoomMdScreens {margin-top: 20%;}
+
+.zwaarInnovationRoomMdScreens h3 { color:#00bfff;
+			                       font-size:26px;
+			                       font-family: serif;
+			                       padding-bottom: 15px;
+			 					   border-bottom: 1px solid #00004d;}
+
+.zwaarInnovationRoomMdScreens p { color:#00bfff;
+								  padding-top: 10px;
+			                      font-family: serif;
+			                      text-align: left;
+		                          font-size:24px;}
+
+@media only screen and (max-width: 768px){
+
+.zwaarInnovationRoomMdScreens {margin-top: 25%;}
+.zwaarInnovationRoomMdScreens h3 { font-size:30px;}
+.zwaarInnovationRoomMdScreens p { font-size:25px;}}		       
+
+
+          /* Daily Working Process*/
+
+@media (max-width: 992px){
+#zwaarDailyActiveProcess {margin-top: 20%;}
+.aboutSectionSlogan { margin-left: 20%;}
+.aboutSectionInfoImages {margin-left: 20%;}
+.aboutSectionSloganText {text-align: center;}
+#workingHours { margin-left: 15% !important; }
+#coffeeCups { margin-left: 30% !important; }
+#brilliantIdeas { margin-top: 25% !important;
+				  margin-left: 25%; }}
+
+
+@media (max-width: 768px){
+
+#zwaarDailyActiveProcess {margin-top: 15%;}
+.aboutSectionSloganText {text-align: center;}
+#workingHours { margin-left: 5% !important; }
+#coffeeCups { margin-left: 65% !important;
+margin-top: -25% !important; }
+#brilliantIdeas {margin-top: 5% !important;
+margin-left: 35% !important; }}
+
+		/* sm And xs screens */
+
+		  /* Innovation Room */
+
+@media only screen and (max-width: 414px){
+
+.zwaarInnovationRoomMdScreens {margin-top: 25%;}
+.zwaarInnovationRoomMdScreens h3 { font-size:26px;}
+.zwaarInnovationRoomMdScreens p { font-size:22px;}}
+
+@media only screen and (max-width: 375px){
+
+.zwaarInnovationRoomMdScreens h3 { font-size:25px;}
+.zwaarInnovationRoomMdScreens p { font-size:22px;}}
+
+@media only screen and (max-width: 320px){
+
+.zwaarInnovationRoomMdScreens {margin-top: 20%;}
+.zwaarInnovationRoomMdScreens h3 { font-size:24px;}
+.zwaarInnovationRoomMdScreens p { font-size:18px;}}
+
+			/* Daily Working Process*/
+
+@media only screen and (max-width: 414px){
+
+#zwaarDailyActiveProcess {margin-top: 20%;}
+
+.aboutSectionSlogan { height: 125px;
+					  width: 125px;
+					  margin-left: -25%;
+					  margin-top: 35% !important;}
+
+.aboutSectionCounter{ height: 115px ;
+					  width:115px;
+	                  position: absolute;
+					  margin-left: -25%;}
+
+.aboutSectionImage { height: 105px;
+					 width: 105px;
+					 margin-left: -3%;}
+
+
+.aboutSectionInfoImages {margin-left: 20%;}
+.aboutSectionSloganText { text-align: center;
+						  font-size: 13px;
+						  margin-top: 25px;}
+
+#workingHours { margin-left: 50%;}
+#coffeeCups { margin-left: 50%;
+              margin-top: 3% !important; }
+#brilliantIdeas { margin-left: 50%;
+				  margin-top: 3% !important;}
+
+.aboutSectionSloganBrainText {margin-top: 35px !important;}}
+
+@media only screen and (max-width: 412px){
+
+#zwaarDailyActiveProcess {margin-top: 15%;}}
+
+@media only screen and (max-width: 375px){
+
+#zwaarDailyActiveProcess {margin-top: 13%;}
+.aboutSectionImage { margin-top: 5px !important;}
+#coffeeCups { margin-top: 1% !important; }
+#brilliantIdeas {margin-top: 1% !important;}}
+
+
+/*@media only screen and (max-width: 320px){
+
+#zwaarDailyActiveProcess {margin-top: 10%;}
+
+.aboutSectionSlogan { height: 120px;
+					  width: 120px;
+					  }
+
+.aboutSectionCounter{ height: 110px ;
+					  width:110px;
+	                  }
+
+.aboutSectionImage { height: 100px;
+					 width: 100px;
+					 }*/
+/*.aboutSectionInfoImages { height: 60px;
+						  width: 60px;}
+*/
+/*.aboutSectionSloganText { text-align: center;
+						  font-size: 13px;
+						  margin-top: 25px;}*/
+
+
+
+/*.aboutSectionSloganBrainText {margin-top: 35px !important;}*/}
+
+/* End About Us Section Style */
+
+/* Start Contact Section Style */
+
+            /* Contact Section Animation */
+
+@keyframes slideInRight {
+  from { transform: translate3d(100%, 0, 0);
+    	 visibility: visible;}
+
+  to { transform: translate3d(0, 0, 0);}}
+
+
+   			/*  Lg screens */
+
+#contact { background: url('assets/contact.jpg') center center no-repeat;
+		   background-size: cover;
+		   height: 100%;}
+
+.contactSectionHeading { margin-top: 100px; 
+						 font-family:serif; ;
+						 font-size: 36px; 
+						 text-align:center;
+						 color:#000080;
+						 animation-name: zoomIn;
+						 animation-duration: 9s;}
+
+@media only screen and (max-width: 1024px){
+
+.contactSectionHeading { margin-top: 20% !important;}}
+
+.contactSectionSubheading { font-family:serif; ;
+							font-size: 16px; 
+							text-align:center;
+							color: #000080; 
+							border-bottom: 1px solid #000080;
+							animation-name: slideInRight;
+							animation-duration: 9s;}
+
+.IconsContainer { animation-name: slideInRight;
+				  animation-duration: 9s; }
+
+.communicationIconsImages { width: 50px !important;
+							height: 50px !important;}
+
+.communicationIconsText { color:#000080;
+						  font-size: 16px;
+						  text-align: center;
+						  font-family: serif;}
+
+.communicationIcons { color:#000080; 
+					  margin-top: 10%;
+ 					  border-bottom: 1px solid #000080;}
+
+.contactSectionText { color: #000080;
+					  font-size: 14px;
+					  font-family: serif;
+					  animation-name: slideInRight;
+					  animation-duration: 9s;}
+
+.contactSectionIcons { font-size: 30px;
+					   color:#000080 ;}
+
+   /*  md, sm And xs screens */
+
+@media only screen and (max-width: 768px){
+
+.contactSectionHeading { margin-top: 20% !important;}
+.communicationIcons { margin-top: 5%;}}
+
+@media only screen and (max-width: 414px) {
+.contactSectionHeading { margin-top: 20% !important;}}
+
+@media only screen and (max-width: 360px){
+.communicationIconsImages { width: 40px !important;
+							height: 40px !important;}}
+
+@media only screen and (max-width: 320px){
+
+.contactSectionHeading { margin-top: 20% !important;}
+.communicationIconsImages { width: 25px !important;
+							height: 25px !important;}
+.communicationIcons { margin-top: 0px;}}
+
+/* End Contact Section Style */
+
+.navColor { color: black; 
+border-bottom: 1px solid red;}
+
+
+
+
